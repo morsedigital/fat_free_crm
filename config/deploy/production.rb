@@ -29,8 +29,8 @@ namespace :symlinks do
             execute "mkdir #{shared_folder_path}"
           rescue
           end
-          # execute "rm -rf #{release_path}/#{shared_folder}"
-          # execute "ln -s #{shared_folder_path} #{release_path}/#{shared_folder}"
+          execute "rm -rf #{release_path}/#{shared_folder}"
+          execute "ln -s #{shared_folder_path} #{release_path}/#{shared_folder}"
         end
       end
     end
